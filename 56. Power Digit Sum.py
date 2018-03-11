@@ -12,4 +12,6 @@ for i,j in product(lst,lst):
 
 print(sum([int(i) for i in str(maximum)]))
 
+print("hello")
+
 
