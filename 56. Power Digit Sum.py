@@ -7,10 +7,11 @@ maximum = 0
 lst = [i for i in range(101)]
 
 for i,j in product(lst,lst):
-    if i**j > maximum:
-        maximum = i**j
+    powsum = sum([int(i) for i in str(i**j)])
+    if powsum > maximum:
+        maximum = powsum
 
-print(sum([int(i) for i in str(maximum)]))
+print(maximum)
 
 
 
